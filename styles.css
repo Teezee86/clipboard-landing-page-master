@@ -1,13 +1,122 @@
+html {
+    font-size: 18px;
+    font-family: "Bai Jamjuree";
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+
+
 :root {
 --strong-cyan: hsl(171, 66%, 44%);
 --light-blue: hsl(233, 100%, 69%);
 --dark-grayish-blue: hsl(210, 10%, 33%);
---grayish-blue: hsl(201, 11%, 66%);
+--grayish-blue: hsl(180, 10%, 96%);
+}
+main, header, section,  nav, ul, li {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+
+}
+header, section, footer{
+    padding: 1em;
+}
+section{
+    padding-bottom: 2em;
 }
 main {
-    background-image: url(design/mobile-design.jpg);
-    background-repeat: no-repeat;
-    background-position: top;
+    background-image: url(images/bg-header-mobile.png);
+    background-size: cover;;
+    background-repeat:no-repeat;
+    background-position:top;
+    background-size: contain;
+}
+header figure{
+    padding-top: 6em;
+}
+p {
+    text-align: jusity;
+    text-justify: auto;
+   text-align: center;;
+    margin: 0 0 3em 0;
+    font-size: .8rem;
+    line-height: 2;
+}
+h1{
+    padding: 2em 0 1em 0;
+    text-align: center;;
+ font-weight: 600;
+ font-size: 1.5rem;
+}
+h2{
+    text-align: center;;
+    padding-top: 4em;
+    padding-bottom:.5em;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+h3{
+    text-align: center;
+    padding: .5em 0;
+    font-weight: 600;
+}
+div {
+    padding: 2em 0;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+div img{
+    padding: 2em;
+}
+figure {
+    padding: 2em 0;
+
+}
+.company-logo {
+    padding: 2em 0;
+}
+.btn {
+    font-size: .8rem;
+    padding: 1em;
+     border-radius: 80px;
+     color: white;
+     width: 100%;
+     border: solid;
+     text-align: center;
+    margin-bottom: 1em;
+    }
+.btn--cyan{
+    background-color: var(--strong-cyan);
+}
+.btn--blue {
+    background-color: var(--light-blue)
+}
+footer{
+    background-color: var(--grayish-blue);
+}
+footer img {
+    width: 70%;
+}
+.c-logo {
+    padding: 2em;
+    width: 50%;
+}
+footer a {
+    font-size: .7em;
+    padding: .7em;
+}
+.social-links {
+    flex-direction: row;
+}
+.social-links
+{
+    padding: 1em;
 }
 
 
@@ -23,9 +132,11 @@ main {
 
 
 
-
-
-
-
-.attribution { font-size: 11px; text-align: center; }
+.attribution {
+    padding-top: 5em;
+    border-top-style: solid;
+    border-top-width: 100%;
+    font-size: 11px;
+    text-align: left;
+}
 .attribution a { color: hsl(228, 45%, 44%); }
